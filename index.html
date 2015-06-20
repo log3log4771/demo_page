@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>臺灣科大管理學士班</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/camera.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	<script src='js/camera.js'></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery.stellar.js"></script>
+	<script src="js/script.js"></script>
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function () {
+			if ($('html').hasClass('desktop')) {
+				new WOW().init();
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+	    $(".toggle").click(function() {
+	        $(this).toggleClass("active");
+	        $(".nav").slideToggle();
+	    });
+	    $(".nav > ul > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
+	});
+	</script>
+	<!--<![endif]-->
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+	 <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		 <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+	 </a>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+	</head>
+<body class="index">
+<!--==============================header=================================-->
+<header id="header">
+	<div id="stuck_container">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<h1><a href="index.html">臺灣科大</a><span>管理學士班</span></h1>
+					<nav>
+						<ul class="sf-menu">
+							<li class="current"><a href="index.html">首頁</a></li>
+							<li><a href="index-1.html">班級介紹</a>
+								
+							</li>
+							<li><a href="index-2.html">系上活動</a>
+								
+							</li>
+							<li><a href="index-3.html">高中生專區</a>
+								
+							</li>
+							<li><a href="index-4.html">聯絡我們</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+
+<!--=======content================================-->
+
+<section id="content">
+	<div class="full-width-container block-1">
+		<div class="camera_container">
+			<div id="camera_wrap">
+				<div class="item" data-src="images/index_img_slider-1.jpg"></div>
+				<div class="item" data-src="images/index_img_slider-2.jpg"></div>
+				<div class="item" data-src="images/index_img_slider-3.jpg"></div>
+				<div class="item" data-src="images/index_img_slider-4.jpg"></div>
+											
+			</div>
+		</div>
+		<div class="circle_title">
+			<img id = "c1" src="images/circle-1.png">
+			<img id = "c2" src="images/circle_logo.png">
+		</div>
+	</div>
+	
+	<div class="full-width-container block-2">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<header>
+						<h3>“ 頂尖管理人才的搖籃 ”</h3>
+					</header>
+					<!--<h4><a href="#">關於臺灣科大管理學院</a></h4>-->
+					<h4>為高中生量身打造</h4>
+					<p>高等技職精神近年來在臺灣形成一股熱潮，連傳統高中生畢業一定要就讀普通大學的觀念也漸漸改觀。隨著技職體系最崇尚的工匠精神發揚光大，身為臺灣第一技職龍頭當然也抓住這樣的趨勢。在科大體系中推出專為高中生量身打造的「管理學士班」，持續領先學界並培養出大量優秀管理人才，深深獲得業界的青睞。<br><br></p>
+					<a href="index-1.html" class="btn">了解更多</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--=======footer=================================-->
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="grid_12 copyright">
+				
+				<pre><span id="copyright-year"></span> |  NTUST</pre>
+			</div>
+		</div>
+	</div>
+</footer>
+<script>
+	jQuery(function(){
+		jQuery('#camera_wrap').camera({
+			height: '34.58333333333333%',
+			thumbnails: false,
+			pagination: true,
+			fx: 'simpleFade',
+			loader: 'none',
+			hover: false,
+			navigation: false,
+			playPause: false,
+			minHeight: "139px",
+		});
+	});
+</script>
+<script>
+	$(document).ready(function() {
+		$(".owl-carousel").owlCarousel({
+			navigation: true,
+			pagination: false,
+			items : 3,
+			itemsDesktop : [1199,3],
+			itemsDesktopSmall : [979,3],
+			itemsTablet: [750,1],
+			itemsMobile : [479,1],
+			navigationText: false
+		});
+	});
+</script>
+<script>
+	$(document).ready(function() { 
+			if ($('html').hasClass('desktop')) {
+				$.stellar({
+					horizontalScrolling: false,
+					verticalOffset: 20,
+					resposive: true,
+					hideDistantElements: true,
+				});
+			}
+		});
+</script>
+</body>
+</html>

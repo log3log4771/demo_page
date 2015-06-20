@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>高中生專區</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	<script src="js/script.js"></script>
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function () {
+			if ($('html').hasClass('desktop')) {
+				new WOW().init();
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+	    $(".toggle").click(function() {
+	        $(this).toggleClass("active");
+	        $(".nav").slideToggle();
+	    });
+	    $(".nav > ul > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
+	});
+	</script>
+
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/new_reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/new_style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	
+	<script src="http://maps.google.com/maps/api/js?sensor=false"type="text/javascript"></script>
+    <script type="text/javascript">
+
+		var locations = [
+		      ['Seoul', 37.566535, 126.977969, 4],
+		      ['London', 51.507351, -0.127758, 5],
+		      ['Paris', 48.856614, 2.352222, 3],
+		      ['Germany', 51.165691, 10.451526, 2],
+		      ['Tokyo', 35.689487, 139.691706, 1]
+		    ];
+		function initialize() {
+
+		
+
+		var mapProp = {
+		    center:new google.maps.LatLng(0,0),
+		    zoom:2,
+		    panControl:false,
+		    zoomControl:false,
+		    mapTypeControl:false,
+		    scaleControl:false,
+		    streetViewControl:false,
+		    overviewMapControl:false,
+		    rotateControl:true,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+
+        var infowindow = new google.maps.InfoWindow();
+        var marker, i;
+
+        
+
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+  	
+	<!--<![endif]-->
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+	 <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		 <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+	 </a>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+	</head>
+<body class="index-3">
+<!--==============================header=================================-->
+<header id="header">
+	<div id="stuck_container">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<h1><a href="index.html">臺灣科大</a><span>管理學士班</span></h1>
+					<nav>
+						<ul class="sf-menu">
+							<li><a href="index.html">首頁</a></li>
+							<li><a href="index-1.html">班級介紹</a>
+								
+							</li>
+							<li><a href="index-2.html">系上活動</a>
+								
+							</li>
+							<li class="current"><a href="index-3.html">高中生專區</a>
+								<!-- <ul>
+									<li><a href="#">常見問題</a>
+										
+									</li>
+									<li><a href="#">出國交換</a>
+									</li>
+									<li><a href="#">看板人物</a>
+									</li>
+								</ul> -->
+							</li>
+							<li><a href="index-4.html">聯絡我們</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<span class="toggle">Menu</span>
+<nav class="nav">
+    <ul>
+        <li><a href="http://www.management.ntust.edu.tw/front/bin/home.phtml">回管院首頁</a></li>
+        <li><a href="index-1.html">系所介紹</a></li>
+        <li><a href="index-2.html">系上活動</a></li>
+        <li><a href="#">高中生專區</a></li>
+        <li><a href="index-4.html">聯絡我們</a></li>
+    </ul>
+</nav>
+
+<!--=======content================================-->
+
+<section id="content">
+	<div class="full-width-container block-1">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<header>
+						<h2 id="modify_content">常見問題</h2>
+					</header>
+				</div>
+			</div>
+				<section id="cd-timeline" class="cd-container">
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-enter">
+							<img src="images/open-book1.png" alt="Picture">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>如何申請管理學士班</h2>
+							<p>管理學士班核定招收 40 名高中生，應屆畢業生可以透過學測聲請方式入學。詳情請見“ 科技校院日間部四年制申請入學聯合招生 ”網站查詢</p>
+							<a target="blank" href="https://caac.jctv.ntut.edu.tw/" class="cd-read-more">了解更多</a>
+							
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-sop">
+							<img src="images/clock145.png" alt="Movie">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>申請入學流程</h2>
+							<p>每年應屆高中三年級學生完成學測測驗之後，校方將在三月中旬接受考生第一階段申請，分為團體報名以及個人報名。待三月底公佈第一階段錄取名單之後，同一時間開放第二階段備審申請，並於四月底公佈第二階段錄取名單。五月中旬開始接受考生的報到與放棄。</p>
+							<a href="#0" class="cd-read-more">了解更多</a>
+							
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-exchange">
+							<img src="images/businessmen13.png" alt="Picture">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>申請短期國際交換</h2>
+							<p>為了開拓在學學生的國際視野，進行國際交流，校方每年在上下學期皆有名額可供學生申請交換。交換學校涵蓋世界五大洲，跨越四大洋。詳細申請流程與資格請見 “ 台灣科技大學國際事務處 ” 網站查詢。<br><br>本校設有「選派優秀學生出國研習辦法」可輔導學生赴國際知名大學交換學生，並透過雙聯學制辦法取得雙學位。</p>
+							<a href="#0" class="cd-read-more">了解更多</a>
+							
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-money">
+							<img src="images/money162.png" alt="Movie">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>獎學金申請</h2>
+							<p>高中生申請入學獎學金：其該入學年度學科能力測驗總級分位於累計1%以內(含)者，每名發給入學獎學金三十萬元；惟入學當學年度修業狀況需符合本校「優秀高中職學生就讀本校大學部獎學金實施要點」規定。<br><br>學業成績優良獎學金：學期成績八十分(含)以上，名列該班第一名發予獎學金六千元，第二名發予獎學金四千元，第三名發予獎學金二千元。</p>
+							
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-ntust">
+							<img src="images/living1.png" alt="Picture">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>與臺科大其他不分系之差別</h2>
+							<p>台灣科技大學目前設立四個種類的學士班，分別是全校不分系學士班，管理學士班，電資學士班與工程學士班，以上學士班皆是從大二開始分流。管理學士班顧名思義是在學學生必須選擇管理學院一個系所作為主修。電資學士班則是選擇電資學院內的一個系所作為主修以此類推。全校不分系學士班則無此規定。</p>
+							
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-study">
+							<img src="images/graduation43.png" alt="Location">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>未來升學</h2>
+							<p>我們每屆都有許多優秀學長姐考取國內外大學之研究所。除了台科研究所直升之外，更有不少考取台清交成政大研究所的學長姐，素質之高可見一斑。</p>
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-job">
+							<img src="images/briefcase13.png" alt="Location">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>未來就業</h2>
+							<p>本校畢業生均為政府單位及相關民間企業爭相錄用，畢業校友表現優異。根據2004年天下 Cheers雜誌調查，企業最愛之商管學院研究所畢業生中，本院名列全國第七，2005年企業最愛大學生中，本校名列全國第五。
+
+							<br><br>本院EMBA辦學績效亦十分卓著，獲亞洲週刊評選2000年全亞洲EMBA第11名，Cheers雜誌2005年度一千大企業經理人最愛EMBA第3名，在企業界中擁有相當高的知名度。</p>
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-end">
+							<img src="images/text70.png" alt="Movie">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>The End ?</h2>
+							<p>接下來請看我們的學長姐經驗分享吧～</p>
+							<!--<h2>附件下載</h2>
+							<p><a href="http://www.management.ntust.edu.tw/ezcatfiles/em/img/img/659/proj_application.doc" target="_blank"><span style="color:#000080;">實務專題-申請表</span></a></p><p><a href="http://www.management.ntust.edu.tw/ezcatfiles/em/img/img/643/293543440.doc" target="_blank"><span style="color:#000080;">實務專題-封面</span></a></p><p><a href="http://www.management.ntust.edu.tw/ezcatfiles/em/img/img/643/118273390.doc" target="_blank"><span style="color:#000080;">實務專題-書背</span></a></p><p><a href="http://www.management.ntust.edu.tw/ezcatfiles/em/img/img/643/110611201.doc" target="_blank"><span style="color:#000080;">實務專題-編排要點</span></a></p>
+							<span class="cd-date">Feb 26</span><p><a href="http://www.management.ntust.edu.tw/ezcatfiles/em/img/img/659/640087499.doc"><span style="color:#000080;">主修雙主修輔系異動申請書</span></a></p>-->
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+				</section> <!-- cd-timeline -->
+
+
+		</div>
+	</div>
+	<div class="full-width-container block-2">
+		<div class="row">
+			<div class="gird_12">
+				<header><h2 id="map_content">交換地圖</h2></header>
+				<div id="map"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">	
+				<div class="grid_12">
+					<p style="text-align:center;"><a href="http://www.oia.ntust.edu.tw/home.php" target="blank" class="btn_b">暸解更多</a></p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</div>
+		<div class="full-width-container block-3">
+		<div class="container">
+			<div class="row">
+					<div class="grid_12">
+						<header>
+							<h2>看板人物</h2>
+						</header>
+					</div>
+				<div class="grid_4">
+					<div class="text_content"><p>我是目前主修工業管理，即將升大四的張芷瑜，記得三年前抱著忐忑不安，不知道科大是什麼樣子的心情進到臺科大，也不確定自己的興趣是什麼。但我們系很棒的地方就是可以到大三在選主修，也就是說，在大一、大二的時候你可以盡情地摸索，詢問學長姊的經驗！我覺得超棒哈哈</p> </div>
+					<h5>張芷瑜</h5>
+					<img src="images/p1.png" style="margin-bottom:50px;">
+				</div>
+				<div class="grid_4">
+					<div class="text_content"><p>我很榮幸能夠參加系籃，從大一開始就能認識每個年級的知名人物，也更認識了其他系上的學長姐。而當選系學會副會長，舉辦系上活動以及系會與系上成員們的溝通，更加凝固了管不分的感情。感謝一路上教導我的學長姐，以及那些屁孩學弟們，還有每年系籃球經們真的是辛苦啦~!</p> </div>
+					<h5>闕晟安</h5>
+					<img src="images/p2.png" style="margin-bottom:50px;">
+				</div>
+				<div class="grid_4">
+					<div class="text_content"><p>我是目前主修工業管理，即將升大四的張芷瑜，記得三年前抱著忐忑不安，不知道科大是什麼樣子的心情進到臺科大，也不確定自己的興趣是什麼。但我們系很棒的地方就是可以到大三在選主修，也就是說，在大一、大二的時候你可以盡情地摸索，詢問學長姊的經驗！我覺得超棒哈哈</p> </div>
+					<h5>張芷瑜</h5>
+					<img src="images/p1.png" style="margin-bottom:50px;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+			<div class="row">	
+				<div class="grid_12">
+					<p style="text-align:center; position:relative; top:-150px;"><a href="index-4.html"class="btn">聯絡我們</a></p>
+				</div>
+			</div>
+		</div>
+</section>
+
+<!--=======footer=================================-->
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="grid_12 copyright">
+				<!--<h2><span>Follow Us</span></h2>
+				<a href="#" class="btn bd-ra"><span class="fa fa-facebook"></span></a>
+				<a href="#" class="btn bd-ra"><span class="fa fa-tumblr"></span></a>
+				<a href="#" class="btn bd-ra"><span class="fa fa-google-plus"></span></a>-->
+				<pre>© <span id="copyright-year"></span> |  NTUST</pre>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+  <script type="text/javascript">
+    var locations = [
+    	['捷克', 50.075538, 14.4378],
+    	['捷克', 50.075538, 14.4378],
+		['比利時', 50.503887, 4.469936],
+		['荷蘭', 52.132633, 5.291266],
+		['奧地利', 47.516231, 14.550072],
+		['義大利', 41.871940, 12.56738],
+		['俄羅斯', 61.524010, 105.318756],
+		['西班牙', 40.463667, -3.74922],
+		['瑞典', 60.128161, 18.643501],
+		['土耳其', 38.963745, 35.243322],
+    	['韓國', 37.566535, 126.977969],
+		['英國', 51.507351, -0.127758],
+		['法國', 48.856614, 2.352222],
+		['德國', 51.165691, 10.451526],
+		['東京', 35.689487, 139.691706],
+		['波蘭', 51.919438, 19.145136],
+		['丹麥', 56.263920, 9.501785],
+		['波蘭', 51.919438, 19.145136]
+		
+    ];
+
+    var map = new google.maps.Map(document.getElementById("map"),{
+      zoom: 3,
+      center: new google.maps.LatLng(50, 50),
+      panControl:false,
+      zoomControl:false,
+      mapTypeControl:false,
+      scaleControl:false,
+      streetViewControl:false,
+      overviewMapControl:false,
+      rotateControl:true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+      map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+        infowindow.setContent(locations[i][0]);
+        infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+
+</body>
+</html>

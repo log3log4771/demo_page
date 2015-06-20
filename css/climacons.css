@@ -1,0 +1,108 @@
+@font-face {
+    font-family:'ClimaconsRegular';
+    src: url('../font/climacons-webfont.eot');
+    src: url('../font/climacons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/climacons-webfont.woff') format('woff'),
+         url('../font/climacons-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'ClimaconsRegular';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  line-height: 1em;
+  margin-left: 0.2em;
+}
+
+.icon-clima-1:before { content: 'I'; } /*  */
+.icon-clima-2:before { content: 'II'; } /* 'v' */
+.icon-clima-3:before { content: 'IV'; } /* '3' */
+.icon-clima-4:before { content: ''; } /* '4' */
+.icon-clima-5:before { content: 'V'; } /* ';' */
+.icon-clima-6:before { content: 'VI'; } /* 'o' */
+.icon-clima-7:before { content: 'IX'; } /* ']' */
+.icon-clima-8:before { content: 'X'; } /* 'x' */
+.icon-clima-9:before { content: 'XII'; } /* '9' */
+.icon-clima-10:before { content: '\0030'; } /* '0' */
+.icon-clima-11:before { content: '\0070'; } /* 'p' */
+
+
+
+/*內容*/
+
+@media (min-width: 980px){
+  .intro_content{
+  
+  width: 60%;
+  
+  font-family: 'ClimaconsRegular';
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  position: relative;
+  top:-50px;
+  left: 20%;
+}
+
+.intro_photo{
+  float: center;
+}
+}
+
+@media (min-width: 491px) and (max-width: 980px){
+  .intro_content{
+  
+  width: 60%;
+  
+  font-family: 'ClimaconsRegular';
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: normal;
+
+  position: relative;
+  top:0px;
+  left: 20%;
+}
+
+.intro_photo{
+  float: center;
+  max-width: 150%;
+  position: relative;
+  top:30%;
+}
+}
+
+
+@media (max-width: 491px){
+.intro_content{
+  
+  width: 90%;
+  
+  font-family: 'ClimaconsRegular';
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+
+  position: relative;
+  top:-200px;
+  left: 3%;
+}
+
+.intro_photo{
+  opacity:0.1;
+  height: 400%;
+  position: relative;
+  top:-10px;
+  left: -200px;
+}
+
+}
+
